@@ -8,5 +8,5 @@
 6. Update Composer using "composer update" command
 7. Update App using "composer require annotations" command
 8. Make migratation using "php bin/console make:migration" command (it Prepare migration to be insert in DATABASE SERVER).
-8.Process your migration with "php bin/console doctrine:migrations:migrate" command ( it simply add table in your DATABASE ). 
-9.To start server use "symfony server:start" on localhost.
+9.Process your migration with "php bin/console doctrine:migrations:migrate" command ( it simply add table in your DATABASE ). 
+10.To start server use "symfony server:start" on localhost.
