@@ -1,0 +1,30 @@
+controllers:
+    resource: ../src/Controller/
+    type: annotation
+
+kernel:
+    resource: ../src/Kernel.php
+    type: annotation
+Home :
+    path: /
+    controller: App\Controller\HomeController::index
+
+AddList :
+    path: /addlist/new
+    controller: App\Controller\HomeController::addList
+    methods: post
+
+UpdateOrder :
+    path: /update/order
+    controller: App\Controller\HomeController::updateOrder
+    methods: post
+
+completeTask:
+    path: /complete/task
+    controller: App\Controller\HomeController::completeTask
+    methods: post
+
+deleteTask:
+    path: /delete/task
+    controller: App\Controller\HomeController::deleteTask
+    methods: post

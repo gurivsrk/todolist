@@ -1,0 +1,131 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+    --primary-color:#3C87FF;
+    --border:1px solid #c1c1c1 ;
+    --border-hover:1px solid var(--primary-color) ;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #4AB1FF, #2D5CFE);
+  display: grid;
+    justify-content: center;
+    align-content: center;
+    }
+::selection{
+    color: #fff;
+    background: #3C87FF;
+    }
+.wrapper{
+    max-width: 80vw;
+    padding: 28px 0 50px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    }
+    
+.task-input{
+    height: 52px;
+    width: 80vw;
+    padding: 0 25px;
+    position: relative;
+    }
+#addTask .form-group{
+    display: grid;
+    grid-template-columns: 5% 87% 8%
+}
+#addTask{
+    padding-bottom: 50px;
+}
+#icon-box{
+    justify-content: center;
+    align-items: center;
+    border: var(--border);
+    border-radius: 5px 0px 0px 5px;
+}
+.form-group input{
+    border: var(--border);
+    line-height: 40px;
+}
+.form-group input.btn{
+    border-radius:0px 5px 5px 0px;
+    padding: 0 10px;
+}
+.form-group .add-input{
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    transition: 0.2s all;
+}
+.task-input input::placeholder{
+    color: #bfbfbf;
+}
+.task-input .add-input:active,
+.task-input .add-input:focus,
+.task-input .add-input:hover{
+    border: var(--border-hover);
+    outline: none;
+    padding: 0 20px;
+}
+
+#showAll, .checkbox{
+    width: 20px;
+    height: 20px;
+}
+.showAll {
+    align-items: center;
+    justify-content: space-between; 
+}
+#task-box{
+  margin-top: 45px;
+  margin-right: 5px;
+  padding: 0 0px 10px;
+}
+
+#form-err {
+    color: red;
+    display: none;
+    font-size: 12px;
+}
+
+table{
+    width:100% ;
+}
+tr,td{
+    border: var(--border);
+    padding: 10px;
+}
+tr td:first-child, tr td:last-child{
+    width: 30px;
+}
+button.delete-btn {
+    background: none;
+    display: block;
+    font-size: 22px;
+}
+tr.checked {
+    opacity: 0.5;
+    text-decoration: line-through;
+    display: none;
+}
+.show tr.checked {
+    display: table-row;
+}
+.alert{
+    position: fixed;
+    right: 5px;
+    top: 15px;
+    display: none; 
+}
