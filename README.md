@@ -1,6 +1,6 @@
 #To Do List
 
-1. First check your device have symfony and composer installed. if not kinldy refer https://symfony.com/doc/current/setup.html and https://getcomposer.org/download/.
+1. First check your device have symfony,composer and PHP v8.0^ installed. if not kinldy refer https://symfony.com/doc/current/setup.html and https://getcomposer.org/download/.
 2. Clone the code in your device 
 3. Add Database in your SQL Server
 4. Add DATABASE_URL="mysql://DATABASE_USER_NAME:DATABASE_PASSWORD@DATABASE_HOST/DATABASE_NAME?serverVersion=5.7"
